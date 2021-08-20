@@ -4,14 +4,14 @@
   "parameters": {
     "webAppName": {
       "type": "string",
-      "defaultValue": "developer-finder",
+      "defaultValue": "pocraizendt2021",
       "metadata": {
         "description": "The name of the web client app that you wish to create."
       }
     },
     "nonLinuxWebAppLocation": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "East US",
       "allowedValues": [
         "South Central US",
         "North Europe",
@@ -46,14 +46,14 @@
     },
     "oauthGitHubClientID": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "7072a3c0131f587e13ec",
       "metadata": {
         "description": ""
       }
     },
     "oauthGitHubClientSecret": {
       "type": "string",
-      "defaultValue": "",
+      "defaultValue": "b429da9677e71c0c82785d1b953735a32d5062c1",
       "metadata": {
         "description": ""
       }
@@ -81,7 +81,7 @@
     },
     "databaseAdminLoginPassword": {
       "type": "securestring",
-      "defaultValue": "",
+      "defaultValue": "PocRaizendt2021",
       "metadata": {
         "description": "This field should be between 8 and 128 characters long. Your password must contain characters from three of the following categories – English uppercase letters, English lowercase letters, numbers (0-9), and non-alphanumeric characters (!, $, #, %, etc.)."
       }
@@ -116,7 +116,7 @@
     },
     "sourceCodeRepositoryURL": {
       "type": "string",
-      "defaultValue": "https://github.com/<YOUR REPOSITORY>/DemoApp",
+      "defaultValue": "https://github.com/alanrdel/DemoApp.git",
       "metadata": {
         "description": "Source code repository URL"
       }
@@ -319,10 +319,10 @@
     {
       "type": "Microsoft.DBforMySQL/servers",
       "name": "[variables('mySQLServerName')]",
-      "apiVersion": "2017-04-30-preview",
+      "apiVersion": "2017-12-01",
       "location": "[variables('location')]",
       "sku": {
-        "name": "MYSQLB50",
+        "name": "B_Gen5_2",
         "tier": "Basic",
         "capacity": 50
       },
@@ -337,7 +337,7 @@
         {
           "type": "databases",
           "name": "[variables('mySQLDatabaseName')]",
-          "apiVersion": "2017-04-30-preview",
+          "apiVersion": "2017-12-01",
           "properties": {
             "charset": "latin1",
             "collation": "latin1_swedish_ci"
@@ -349,7 +349,7 @@
         {
           "type": "firewallRules",
           "name": "all",
-          "apiVersion": "2017-04-30-preview",
+          "apiVersion": "2017-12-01",
           "properties": {
               "startIpAddress": "0.0.0.0",
               "endIpAddress": "255.255.255.255"
@@ -363,10 +363,10 @@
     {
       "type": "Microsoft.DBforPostgreSQL/servers",
       "name": "[variables('postgreSQLServerName')]",
-      "apiVersion": "2017-04-30-preview",
+      "apiVersion": "2017-12-01",
       "location": "[variables('location')]",
       "sku": {
-          "name": "PGSQLB50",
+          "name": "B_Gen5_2",
           "tier": "Basic",
           "capacity": 50
       },
@@ -383,7 +383,7 @@
           {
               "type": "databases",
               "name": "[variables('postgreSQLDatabaseName')]",
-              "apiVersion": "2017-04-30-preview",
+              "apiVersion": "2017-12-01",
               "properties": {
                   "charset": "UTF8",
                   "collation": "English_United States.1252"
@@ -395,7 +395,7 @@
           {
             "type": "firewallRules",
             "name": "all",
-            "apiVersion": "2017-04-30-preview",
+            "apiVersion": "2017-12-01",
             "properties": {
                 "startIpAddress": "0.0.0.0",
                 "endIpAddress": "255.255.255.255"
