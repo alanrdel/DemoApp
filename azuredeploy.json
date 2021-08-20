@@ -324,7 +324,7 @@
       "sku": {
         "name": "B_Gen5_2",
         "tier": "Basic",
-        "capacity": 50
+        "capacity": 2
       },
       "properties": {
         "administratorLogin": "[parameters('databaseAdminLoginName')]",
@@ -368,7 +368,7 @@
       "sku": {
           "name": "B_Gen5_2",
           "tier": "Basic",
-          "capacity": 50
+          "capacity": 2
       },
       "properties": {
           "administratorLogin": "[parameters('databaseAdminLoginName')]",
