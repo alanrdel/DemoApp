@@ -46,14 +46,14 @@
     },
     "oauthGitHubClientID": {
       "type": "string",
-      "defaultValue": "7072a3c0131f587e13ec",
+      "defaultValue": "",
       "metadata": {
         "description": ""
       }
     },
     "oauthGitHubClientSecret": {
       "type": "string",
-      "defaultValue": "b429da9677e71c0c82785d1b953735a32d5062c1",
+      "defaultValue": "",
       "metadata": {
         "description": ""
       }
