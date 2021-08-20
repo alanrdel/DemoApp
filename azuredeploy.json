@@ -116,7 +116,7 @@
     },
     "sourceCodeRepositoryURL": {
       "type": "string",
-      "defaultValue": "https://github.com/alanrdel/DemoApp.git",
+      "defaultValue": "https://github.com/alanrdel/DemoApp",
       "metadata": {
         "description": "Source code repository URL"
       }
